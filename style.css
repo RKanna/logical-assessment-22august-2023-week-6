@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+button {
+  position: absolute;
+  top: 23rem;
+  left: 40.2rem;
+  height: 2rem;
+  width: 15rem;
+  border-radius: 1rem;
+  outline: none;
+  border: none;
+  background-color: blueviolet;
+  cursor: pointer;
+}
