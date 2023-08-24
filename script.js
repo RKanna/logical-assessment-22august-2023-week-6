@@ -151,15 +151,24 @@ const imageUrls = [
   "http://farm1.staticflickr.com/33/45336904_1aef569b30_n.jpg",
   "http://farm6.staticflickr.com/5211/5384592886_80a512e2c9.jpg",
 ];
+const btnElement = document.getElementById("btn");
 
-function generateRandomImages() {
+btnElement.addEventListener("click", () => {
   const randomIndex = Math.floor(Math.random() * imageUrls.length);
   const randomImage = imageUrls[randomIndex];
 
   const imgContainer = document.querySelector(".img img");
   imgContainer.src = randomImage;
   imgContainer.style.display = "block";
-}
+});
+// function generateRandomImages() {
+//   const randomIndex = Math.floor(Math.random() * imageUrls.length);
+//   const randomImage = imageUrls[randomIndex];
+
+//   const imgContainer = document.querySelector(".img img");
+//   imgContainer.src = randomImage;
+//   imgContainer.style.display = "block";
+// }
 
 //9.Write a JavaScript function that hides email addresses to prevent unauthorized access.
 
